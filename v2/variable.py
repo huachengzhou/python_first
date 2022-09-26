@@ -21,5 +21,10 @@ print(type(100))
 print(type(''))
 
 
+type_name = type("a")
+
+print("变量类型:",type_name)
+
+
 
 
