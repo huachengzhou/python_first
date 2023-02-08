@@ -188,6 +188,40 @@ print('d', '=', d)
 ```
 
 
+### 重要函数
+
+#### range
+
+range()的三种创建方式：
+
+第一种：只有一个参数（小括号中只给了一个数）即range(stop) 
+
+第二种：range(start,stop) （给了两个参数，即小括号中给了两个数）
+
+第三种：range(start,stop,step)：创建一个在[start,stop)之间，步长为step;
+
+```python
+arr0 = range(10)
+
+for kk in arr0:
+    print(kk)
+
+print("--------------------------")
+
+arr1 = range(2, 7)
+
+for i in arr1:
+    print(i)
+
+print("..............................")
+
+arr2 = range(20, 100, 10)
+for k in arr2:
+    print(k)
+
+```
+
+
 [参考1](https://www.runoob.com/python/python-numbers.html)
 [参考2](http://c.biancheng.net/view/2171.html)
 [参考3](https://www.liaoxuefeng.com/wiki/1016959663602400/1017106984190464)
