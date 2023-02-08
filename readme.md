@@ -149,6 +149,47 @@ tuple_value = ()
 ```
 
 
+```python
+# 列表 也是数组 奇怪吧
+list_value = [2,3,5]
+
+print('length',len(list_value))
+
+
+# 字典
+ditc_value = {'a':'2'}
+
+print("ditc_value",ditc_value)
+
+
+# 元组 相当于常量
+tuple_value = (2,'b')
+
+print('tuple_value',tuple_value)
+```
+
+
+#### Python 运算符
+
+```python
+import random
+
+# 简单运算符
+a = 10 - 1
+b = 11 * (2 + 5)
+c = random.random() / 20
+d = 20 % 4
+
+print('a', '=', a)
+print('b', '=', b)
+print('c', '=', c)
+print('d', '=', d)
+
+```
+
+
 [参考1](https://www.runoob.com/python/python-numbers.html)
 [参考2](http://c.biancheng.net/view/2171.html)
 [参考3](https://www.liaoxuefeng.com/wiki/1016959663602400/1017106984190464)
+
+

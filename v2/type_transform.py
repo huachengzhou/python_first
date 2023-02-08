@@ -16,6 +16,10 @@ var_float = 3.14
 
 var_double = 32.23632
 
+print(var_float,type(var_float),sep='=')
+print(type(var_double))
+
+
 
 
 
