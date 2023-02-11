@@ -585,5 +585,6 @@ print(mathModule.randomString(92))
 [参考1](https://www.runoob.com/python/python-numbers.html)
 [参考2](http://c.biancheng.net/view/2171.html)
 [参考3](https://www.liaoxuefeng.com/wiki/1016959663602400/1017106984190464)
+[参考4](https://docs.pythontab.com/)
 
 
