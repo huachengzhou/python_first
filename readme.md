@@ -799,6 +799,86 @@ fileF6()
 | os.path.supports_unicode_filenames | 设置是否可以将任意 Unicode 字符串用作文件名。 |
 
 
+```python
+
+
+import  os
+
+import  time
+
+# 返回当前工作目录
+print(os.getcwd())
+
+# 返回 path 的绝对路径
+print(os.path.abspath(os.getcwd()))
+
+dir1x = os.getcwd() + "\\"+str(int(time.time()))
+
+# 创建目录
+os.mkdir(dir1x)
+print(dir1x)
+
+# os.chdir(dir1x)
+# print("新目录",os.getcwd())
+
+
+# 获取 path 路径的基本名称，即 path 末尾到最后一个斜杠的位置之间的字符串 如 readme.md
+print(os.path.basename("D:\\pythonProjects\\t2\\readme.md"))
+
+# 判断路径是否为文件
+print(os.path.isfile("D:\\pythonProjects\\t2\\readme.md"))
+
+# 判断路径是否为目录
+print(os.path.isdir("D:\\pythonProjects\\t2"))
+```
+
+```python
+import os
+
+import time
+
+import random
+
+str2 = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "\\file" + "\\" + "_writelines.txt"
+strDir = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "\\file" + "\\" + str(random.random())
+str21 = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "\\file" + "\\" + "_zzx.txt"
+str3 = os.path.dirname(str2) + "\\_v0000.text"
+
+os1 = open(str2, "w")
+os2 = open(str21, "w")
+
+strList = []
+for x in range(0, 100):
+    strList.append(str(time.time() * time.time()) + '\n')
+
+os1.writelines(strList)
+os1.flush()
+os1.close()
+
+os2.write(os.getcwd())
+os2.flush()
+os2.close()
+
+
+
+print(str3)
+print(str2)
+# 重命名
+os.rename(str2, str3)
+
+
+print(str21)
+
+# 删除文件
+os.remove(str21)
+
+os.mkdir(strDir)
+print(strDir)
+
+# 删除文件夹
+os.rmdir(strDir)
+```
+
 
 ## 面向对象
 
